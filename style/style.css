@@ -1,0 +1,24 @@
+*{margin: 0;padding: 0;list-style:none;}
+body{background:#fff url(bg.jpg) repeat top;font-family:helvetica, arial, verdana, tahoma, sans-serif;font-size:11px;line-height:18px;color:#333;}
+a{color:#8e8a77;text-decoration:none;}
+a:hover{color:#eee;}
+li.link{font-size:larger;}
+li.current_link{font-weight:bold;}
+p{margin:10px 0;}
+small{font-size:11px;color:#8e8a77;}
+h2 a, h1, h2, h3, h4, h5{font-weight:normal;color:#615d58;font-size:24px;line-height:30px;}
+		
+#container {width:929px;padding:0 22px;margin:0 auto;background:url(content.jpg) repeat-y center top;}
+#header{width:929px;height:368px;background:url(header.jpg) no-repeat;position:relative;}
+#header h1 a{font-size:40px;line-height:40px;width:470px;overflow:hidden;color:#39322a;position:absolute;left:15px;top:20px}
+#nav{position:absolute;width:400px;left:515px;top:40px;}
+#nav li{display:inline;padding:0 10px;}
+#nav li a{color:#d5ccc2;}
+#nav li a:hover{border-bottom:1px solid #d5ccc2;}
+#sideblog{width:466px;height:286px;overflow:hidden;position:absolute;top:78px;left:10px;}
+#sideblog, #sideblog h5{color:#d5ccc2;}
+#sideblog h5{font-weight:normal;fontisze:28px;line-height:30px}
+#picture{width:392px;height:251px;overflow:hidden;position:absolute;top:91px;left:509px;}
+#content{width:929px;background:url(header.jpg) no-repeat center -368px;}
+.post{margin:0 0 25px 0;padding:22px;}
+.post h2 a:hover{color:#000;}
