@@ -21,7 +21,7 @@
                 <div class="post">
                     <h2>Welcome to New Ponds!</h2>
                     <p>Looking for the Torkel's Hjem reservation calendar? It's moved! But don't worry, it hasn't moved far, check it out: <a href="torkels_hjem.php">Torkel's Hjem</a>.</p>
-                    <p>Also, checkout the
+                    <p>Also, checkout the new <a href="eagles_watch.php">Eagle's Watch Reservation Calendar</a>.</p>
                 </div>
             </div>
             <?php include 'includes/footer.php' ?>
