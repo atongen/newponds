@@ -1,3 +1,6 @@
+/**
+ * Google Analytics
+ */
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-19175999-4']);
 _gaq.push(['_trackPageview']);
@@ -8,6 +11,9 @@ _gaq.push(['_trackPageview']);
   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 
+/**
+ * Place a random photo in #picture
+ */
 $(document).ready(function() {
   var $pic = $('#picture');
   if ($pic[0]) {
