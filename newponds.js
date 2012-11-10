@@ -12,7 +12,7 @@ _gaq.push(['_trackPageview']);
 })();
 
 /**
- * Place a random photo in #picture
+ * Place a random photo in #picture elm
  */
 $(document).ready(function() {
   var $pic = $('#picture');
