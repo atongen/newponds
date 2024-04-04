@@ -19,6 +19,32 @@ newponds.net -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <script src="newponds.js"></script>
   <link rel="stylesheet" href="style/style.css" type="text/css" media="screen">
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        events: [
+          {
+            title  : 'event1',
+            start  : '2024-04-04'
+          },
+          {
+            title  : 'event2',
+            start  : '2024-04-05',
+            end    : '2024-04-07'
+          },
+          {
+            title  : 'event3',
+            start  : '2024-04-09T12:30:00',
+            allDay : false // will make the time show
+          }
+        ]
+      });
+      calendar.render();
+    });
+  </script>
 </head>
 <body>
   <div id="container">
@@ -39,7 +65,6 @@ newponds.net -->
       <div class="post">
         <h2>Torkel's Hjem Reservation Calendar</h2>
         <div id="calendar">
-          <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;height=664&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=andrewtongen.net_i8okpp56jc0dvm53eg9611gh5s%40group.calendar.google.com&amp;color=%23875509&amp;ctz=America%2FChicago" style=" border-width:0 " width="885" height="664" frameborder="0" scrolling="no"></iframe>
         </div>
       </div>
     </div>
