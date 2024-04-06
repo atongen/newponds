@@ -19,6 +19,21 @@ newponds.net -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <script src="newponds.js"></script>
   <link rel="stylesheet" href="style/style.css" type="text/css" media="screen">
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        eventSources: [
+          {
+            url: "https://newponds.s3.us-east-2.amazonaws.com/site-metadata/eagles_watch.json",
+          }
+        ]
+      });
+      calendar.render();
+    });
+  </script>
 </head>
 <body>
   <div id="container">
@@ -39,7 +54,6 @@ newponds.net -->
       <div class="post">
         <h2>Eagle's Watch Reservation Calendar.</h2>
         <div id="calendar">
-          <iframe src="https://calendar.google.com/calendar/embed?src=c_ifi46rp19cjd2k9s96et5eajl0%40group.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="885" height="664" frameborder="0" scrolling="no"></iframe>
         </div>
       </div>
     </div>
