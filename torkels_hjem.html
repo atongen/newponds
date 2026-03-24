@@ -15,9 +15,9 @@
 newponds.net -->
 <head>
   <title>Torkel's Hjem</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <script src="newponds.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="newponds.js" defer></script>
   <link rel="stylesheet" href="style/style.css" type="text/css" media="screen">
   <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
   <script>
@@ -53,12 +53,15 @@ newponds.net -->
     <div id="content">
       <div class="post">
         <h2>Torkel's Hjem Reservation Calendar</h2>
+        <div class="calendar-notice">
+          🚨 This reservation calendar is moving to <a href="https://www.cabincronies.com/c/torkels-hjem" target="_blank" rel="noopener noreferrer">Cabin Cronies</a>! Create a free account there to view availability and book your stay.
+        </div>
         <div id="calendar">
         </div>
       </div>
     </div>
     <div style="line-height: 50px; text-align: center;">
-      &copy; Copyright 2012 New Ponds Media
+      &copy; Copyright <span id="copyright-year">2012</span> New Ponds Media
     </div>
   </div>
   <p>&nbsp;</p>

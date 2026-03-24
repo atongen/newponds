@@ -1,39 +1,27 @@
 /**
- * Google Analytics
- */
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-19175999-4']);
-_gaq.push(['_trackPageview']);
-
-(function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-
-/**
  * Place a random photo in #picture
  */
-$(document).ready(function() {
-  var $pic = $('#picture');
-  if ($pic[0]) {
-    var page = $pic.attr("class"), n;
-    switch(page) {
-      case 'newponds':
-        n = 45;
-        break;
-      case 'eagles_watch':
-        n = 17;
-        break;
-      case 'torkels_hjem':
-        n = 9;
-        break;
+document.addEventListener('DOMContentLoaded', function() {
+  var pic = document.getElementById('picture');
+  if (pic) {
+    var page = pic.className, n;
+    switch (page) {
+      case 'newponds':     n = 45; break;
+      case 'eagles_watch': n = 17; break;
+      case 'torkels_hjem': n = 9;  break;
     }
     if (n) {
       var str = "" + Math.floor(Math.random() * n);
-      var pad = "00"
+      var pad = "00";
       var src = "images/" + page + pad.substring(0, pad.length - str.length) + str + ".jpg";
-      $pic.html($("<img/>", { src: src, alt: page }));
+      var img = document.createElement('img');
+      img.src = src;
+      img.alt = page.replace(/_/g, ' ');
+      pic.appendChild(img);
     }
   }
+
+  // Update copyright year
+  var yr = document.getElementById('copyright-year');
+  if (yr) yr.textContent = new Date().getFullYear();
 });
