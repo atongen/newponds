@@ -1,0 +1,23 @@
+body {
+    background: #fff url(bg.jpg) repeat top;
+    font-family: helvetica, arial, verdana, tahoma, sans-serif;
+    font-size: 11px;
+}
+
+#container {
+    margin: auto;
+    width: 720px;
+    background-color: white;
+}
+
+#sidebar {
+    width: 180px;
+}
+
+#content {
+
+}
+
+#footer {
+    text-align: center;
+}
